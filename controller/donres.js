@@ -13,7 +13,9 @@ var donUser = function(req,res){
   });
   donmodel.save(function(err,doc){
     if(err) res.json(err);
-    else   res.json({ "msg" : "We Will Contact You Soon"});
+    else {
+      res.render('./pages/success');
+    };
   });
 }
 module.exports = {"donUser" : donUser };

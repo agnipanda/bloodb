@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var contres = require('../controller/contres');
 var donres = require('../controller/donres');
+var needres = require('../controller/needres');
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('pages/index', { title: 'Blood Donation' });
@@ -20,4 +21,5 @@ router.get('/contact', function(req,res){
 });
 router.post('/contact', contres.conUser );
 router.post('/donate', donres.donUser);
+router.post('/need', needres.showData);
 module.exports = router;

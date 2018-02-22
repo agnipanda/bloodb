@@ -60,3 +60,18 @@ footer{
 #radius{
   border-radius: 150px;
 }
+
+.table{
+  border-spacing:5px;
+  border-collapse:  collapse;
+}
+.thetab th, .thetab td { padding: 0.5em; }
+.thetab { border: 1px solid white; }
+.thetab th, .thetab td { border: 1px solid white; }
+.thetabcol{
+  background-color:#C3D8EB;
+}
+.grp{
+  background-color:#FE7C73;
+  color:white;
+}
