@@ -9,8 +9,11 @@ var conUser = function(req,res){
   });
   conmodel.save(function(err,doc){
     if(err) res.json(err);
-    else   res.json({ "msg" : "successful"});
+    else   res.render('./pages/contactSuccess');
   });
+
+  
+
 }
 
 module.exports = {"conUser" : conUser };
