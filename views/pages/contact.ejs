@@ -1,10 +1,7 @@
-<div class="jumbotron text-center">
-   <h1>Contact page</h1>
-     <div class = "row">
-       <div class = "col-sm-6 col-sm-offset-3">
-         <h2> Contact Us! </h2>
-         <p>We are social workers :)</p>
-
+<div class="container" style="background-color:#FFF8A4">
+  <%- include header.ejs %>
+       <div class = "col-sm-6 col-lg-6 col-md-6">
+         <p style="font-weight:bold; font-size:24px; text-align:center">WE ARE SOCIAL WORKERS, SHARE YOUR THOUGHTS!</p><br>
       <form id ="regform" action = "/contact" method = "post">
         <div class="form-group">
           <label>Name</label>
@@ -16,7 +13,8 @@
         </div>
         <div class="form-group">
           <label>Your Message</label>
-          <input type="text" name="message" class="form-control" required>
+          <textarea type="textarea" name="message" class="form-control" required>
+          </textarea>
         </div>
 
         <div class="form-group text-right">
@@ -24,7 +22,11 @@
         </div>
       </form>
     </div>
-    <div>
-
-   <p>contact form</p>
+    <div class="col-sm-6 col-lg-6 col-md-6" style="background-image:url('images/donor2.png'); background-size:contain; background-size:cover;">
+      <div style="height:600px">
+    </div>
+</div>
+</div>
+<div class="container">
+  <%- include footer.ejs %>
 </div>

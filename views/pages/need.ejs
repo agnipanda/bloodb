@@ -1,7 +1,8 @@
-<div class="jumbotron text-center">
-   <h1>We Are Here To Help. :)</h1>
-     <div class = "row">
-       <div class = "col-sm-6 col-sm-offset-3">
+<div class="container" style="background-color:#FFF8A4;">
+  <%- include header.ejs %>
+      <p style="text-align:center; font-size:24px"><b>SEARCH YOUR BLOOD GROUP MATCH</b></p><br>
+      <br>
+       <div class = "col-sm-6 col-md-6 col-lg-6" style="background-color:#FFF8A4;">
       <form id ="regform" action = "/need" method = "post">
         <div class="form-group">
           <label>Blood Group Required</label>
@@ -16,6 +17,11 @@
         </div>
       </form>
     </div>
-    <div>
-
+    <div class = "col-sm-6 col-md-6 col-lg-6" style="background-image:url('images/donor.jpg'); background-size:contain; background-size:cover;">
+      <div style="height:700px">
+    </div>
+  </div>
+</div>
+<div class="container">
+  <%- include footer.ejs %>
 </div>

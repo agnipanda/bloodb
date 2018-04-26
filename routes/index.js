@@ -3,12 +3,9 @@ var router = express.Router();
 var contres = require('../controller/contres');
 var donres = require('../controller/donres');
 var needres = require('../controller/needres');
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('fpage', { title: 'Blood Donation' });
-});
 
-router.get('/index', function(req,res){
+
+router.get('/', function(req,res){
   res.render('pages/index');
 });
 
@@ -26,6 +23,12 @@ router.get('/contact', function(req,res){
 
 router.get('/success', function(req,res){
   res.render('fpage');
+});
+router.get('/maps', function(req,res){
+  res.render('pages/maps');
+});
+router.get('/learn', function(req,res){
+  res.render('pages/learn');
 });
 
 router.post('/contact', contres.conUser );
