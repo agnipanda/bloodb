@@ -10,6 +10,7 @@ var donUser = function(req,res){
     fname : req.body.fname,
     lname : req.body.lname,
     age : req.body.age,
+    number : req.body.number,
     email : req.body.email,
     place : req.body.place,
     gender : req.body.gender,
@@ -34,7 +35,7 @@ var donUser = function(req,res){
         to: req.body.email,
         from: "bloodb@gmail.com",
         subject: "Thank You",
-        text:"Hello,"+req.body.fname+" " + req.body.lname +" . Thanks for saving a life!, We will contact you soon with further details about donation time and date",
+        text:"Hello,"+req.body.fname+" " + req.body.lname +" . Thanks for saving a life!, We will contact you in need!",
     };
     sgMail.send(msg2);
     };
