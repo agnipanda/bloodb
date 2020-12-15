@@ -1,22 +1,35 @@
 <%- contentFor('hero') %>
-<section class="hero">
-    <div class="hero-content">
-
-      <br/>
+<section class="content-page2">
+  <div class="container">
+    <%- include header.ejs %>
+      <div class="col-md-6 col-lg-6 col-sm-6" style="background-color:yellow">
+      <div class="card" align="center">
+        <div class="card">
+          <img src="images/donatet.jpeg" style="margin-top:3px; opacity:0.95">
+        </div>
       <br>
-      <a href="/donate" class="btn btn-lg btn-primary">Donate Blood</a></t>
-      <a href="/need" class="btn btn-lg btn-primary">Need Blood</a>
-      <br>
-      <br>
-      <br>
-      <a href="/contact" class="btn btn-lg btn-primary">Contact us</a>
-
+      <a href="/donate" class="btn btn-primary" style="background-color:#F5F6A8;color:black;"><b>Donate Blood</b></a></t>
+      <a href="/need" class="btn btn-primary" style="background-color:#F5F6A8;color:black;"><b>Need Blood</b></a></t>
+      <a href="/contact" class="btn btn-primary" style="background-color:#F5F6A8;color:black;" ><b>Contact us</b></a>
+      <div style="height:114px">
+      </div>
     </div>
-
+    </div>
+    <div class="col-md-6 col-lg-6 col-sm-6" style="background-image:url('images/blood1.jpg')">
+      <div style="height:400px">
+      </div>
+    </div>
+    <div class="col-md-12 col-lg-12 col-sm-12" style="background-image:url('images/benifits.png'); opacity:0.7; background-size: contain; background-size: cover;">
+      <div style="height:550px">
+        <br>
+        <div style="float:right">
+        <a href="/learn" class="btn btn-primary" style="background-color:#3845A5;">Click here to Learn More</a>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <%- include footer.ejs %>
+  </div>
 </section>
-
-
 <%- contentFor('body') %>
-<div class="jumbotron text-center">
-    Home Page
-</div>

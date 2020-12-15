@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
+    "start": "nodemon ./bin/www",
     "devstart":"nodemon ./bin/www"
   },
   "dependencies": {
@@ -14,6 +14,8 @@
     "express-ejs-layouts": "^2.3.1",
     "express": "~4.15.5",
     "morgan": "~1.9.0",
-    "serve-favicon": "~2.4.5"
+    "serve-favicon": "~2.4.5",
+    "@sendgrid/mail": "^6.2.1",
+    "dotenv": "^5.0.1"
   }
 }

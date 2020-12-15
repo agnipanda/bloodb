@@ -41,13 +41,8 @@ header .navbar{
   padding: 20px;
 }
 
-main{
-  min-height: 500px;
-  padding: 50px 0;
-}
-
 footer{
-  padding:30px 0;
+  padding:0 0;
   font-size: 14px;
   color: #BBB;
   background: #222;
@@ -59,4 +54,27 @@ footer{
 }
 #radius{
   border-radius: 150px;
+}
+
+
+.vl {
+    border-left: 2px solid white;
+    height: 198px;
+}
+
+
+
+.table{
+  border-spacing:5px;
+  border-collapse:  collapse;
+}
+.thetab th, .thetab td { padding: 0.5em; }
+.thetab { border: 1px solid white; }
+.thetab th, .thetab td { border: 1px solid white; }
+.thetabcol{
+  background-color:#C3D8EB;
+}
+.grp{
+  background-color:#FE7C73;
+  color:white;
 }
